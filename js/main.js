@@ -24,3 +24,16 @@ const swiper = new Swiper('.hero__swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+// popup
+const callBtn = document.querySelector('.call-to-us__btn');
+const popUp = document.querySelector('.call-to-us__pop-up');
+
+function openClose(el) {
+  el.classList.toggle('active');
+}
+
+callBtn.addEventListener('click', () => {
+  openClose(popUp);
+});
